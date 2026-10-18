@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Literal
-from sync_api import request, questions2json
-from sync_api.__consts import DecisionModel
+from ollama_decision.sync_api import request, questions2json
+from ollama_decision.sync_api.__consts import DecisionModel
 import httpx
 
 @dataclass
