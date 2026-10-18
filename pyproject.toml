@@ -1,13 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "ollama-decision-sdk"
 version = "0.1.0"
-description = "Add your description here"
+description = "Python SDK for Ollama's Decision API. Convert text into structured, typed responses without prose generation using an elegant operator-based DSL."
 readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.13"
 authors = [
     { name = "Arthur", email = "arthuras.work@gmail.com" }
 ]
-requires-python = ">=3.13"
+keywords = [
+    "ollama",
+    "decision-api",
+    "llm",
+    "structured-output",
+    "classification",
+    "nlp",
+    "systemone",
+    "nimble-v3",
+    "tev1"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
 dependencies = [
     "httpx>=0.28.1",
 ]
 
+[project.urls]
+Homepage = "https://github.com/arthuraswork/ollama-decision"
+Repository = "https://github.com/arthuraswork/ollama-decision"
+"Bug Tracker" = "https://github.com/arthuraswork/ollama-decision/issues"
+
+# Опционально: если вы хотите, чтобы версия бралась из __init__.py, 
+# можно использовать dynamic, но для простоты пока оставил статическую.
