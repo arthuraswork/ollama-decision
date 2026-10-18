@@ -1,5 +1,5 @@
-from sync_api.payloads import noul_question, score_question, choice_question
-from sync_api.model import OllamaSystem1
+from ollama_decision.sync_api.payloads import noul_question, score_question, choice_question
+from ollama_decision.sync_api.model import OllamaSystem1
 import json
 
 
